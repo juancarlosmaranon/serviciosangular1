@@ -13,14 +13,14 @@ export class EmpleadosoficioComponent implements OnInit {
   @ViewChild("selectoficio") selectoficio!: ElementRef;
   public empleados!: Array<Empleado>;
 
+  constructor(private _service:EmpleadosService) { }
+
   buscarEmpleado(): void{
     var oficio = this.selectoficio.nativeElement.value;
     this._service.getEmpleadosOficio(oficio).subscribe(response=>{
       this.empleados = response;
     })
   }
-
-  constructor(private _service:EmpleadosService) { }
 
   ngOnInit(): void {
     this._service.getOficios().subscribe(response=>{
