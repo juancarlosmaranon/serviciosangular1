@@ -7,6 +7,8 @@ import { PersonasapiComponent } from "./components/personasapi/personasapi.compo
 import { EmpleadossalarioComponent } from "./components/empleadossalario/empleadossalario.component";
 import { EmpleadosoficioComponent } from "./components/empleadosoficio/empleadosoficio.component";
 import { PlantillaComponent } from "./components/plantilla/plantilla.component";
+import { MaestrodetalleComponent } from "./components/maestrodetalle/maestrodetalle.component";
+import { DetailsComponent } from "./components/details/details.component";
 
 const appRoutes: Routes = [
     {path: "", component: HomeComponent},
@@ -15,7 +17,9 @@ const appRoutes: Routes = [
     {path: "personasapi", component: PersonasapiComponent},
     {path: "empleadossalario", component: EmpleadossalarioComponent},
     {path: "empleadosoficio", component: EmpleadosoficioComponent},
-    {path: "plantilla", component: PlantillaComponent}
+    {path: "plantilla", component: PlantillaComponent},
+    {path: "maestrodetalle", component:MaestrodetalleComponent},
+    {path: "details/:idEmpleado", component:DetailsComponent}
 ];
 
 export const appRoutingProviders: any[] = [];

@@ -1,0 +1,17 @@
+<div>
+    <h1>Maestro detalle</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Apellido</td>
+                <td>Detalles</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emple of empleados">
+                <td>{{emple.apellido}}</td>
+                <td><button class="btn btn-success" [routerLink]="['/details/',emple.idEmpleado]" >Detalles</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

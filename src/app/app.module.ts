@@ -18,6 +18,8 @@ import { EmpleadossalarioComponent } from './components/empleadossalario/emplead
 import { EmpleadosoficioComponent } from './components/empleadosoficio/empleadosoficio.component';
 import { PlantillaComponent } from './components/plantilla/plantilla.component';
 import { PlantillaService } from './services/plantilla.service';
+import { MaestrodetalleComponent } from './components/maestrodetalle/maestrodetalle.component';
+import { DetailsComponent } from './components/details/details.component';
 // import { EmpleadosoficioComponent } from './component/empleadosoficio/empleadosoficio.component';
 
 @NgModule({
@@ -32,6 +34,8 @@ import { PlantillaService } from './services/plantilla.service';
     EmpleadossalarioComponent,
     EmpleadosoficioComponent,
     PlantillaComponent,
+    MaestrodetalleComponent,
+    DetailsComponent,
   
   ],
   imports: [
